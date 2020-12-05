@@ -1,32 +1,25 @@
-import React from 'react'
 import Head from 'next/head'
 
 import { Container } from '../styles/pages/Home'
 
+import Header from '../components/Header'
+import Main from '../components/Main'
+
 const Home = () => {
   return (
-    <Container>
+    <>
       <Head>
-        <title>Homepage</title>
+        <title>Assinaturas de e-mail</title>
       </Head>
 
-      <h1>Next Template TypeScript</h1>
+      <Container>
+        <Header />
 
-      <a
-        href="https://github.com/ediano/next-template-typescript"
-        target="_black"
-      >
-        Clone Repo GitHub
-      </a>
+        <Main />
 
-      <p>
-        Incididunt ut sit esse veniam laboris deserunt enim sit adipisicing
-        magna culpa esse. Sit exercitation adipisicing occaecat exercitation
-        anim cupidatat ipsum irure est ut qui esse. Officia sit ex esse
-        occaecat. Ea aute non laborum ullamco mollit cupidatat non eiusmod
-        laborum.
-      </p>
-    </Container>
+        <footer></footer>
+      </Container>
+    </>
   )
 }
 
