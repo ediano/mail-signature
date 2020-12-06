@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  & + & {
-    padding-top: 1rem;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-  }
-
   width: 100%;
 
   display: flex;

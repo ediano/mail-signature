@@ -11,7 +11,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input = ({ name, label, ico: Ico, ...rest }: Props) => {
   return (
-    <Container>
+    <Container className="input-block">
       {Ico && <Ico size="3rem" color="#fff" />}
 
       <div>
