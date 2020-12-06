@@ -60,7 +60,7 @@ export const Aside = styled.aside`
 `
 
 export const MainContent = styled.main`
-  div {
+  > div {
     width: 100%;
     padding: 1rem;
   }
@@ -70,7 +70,7 @@ export const MainContent = styled.main`
   }
 
   .field-of-vision {
-    background: transparent;
+    width: 100%;
 
     > span {
       margin-bottom: 0.5rem;
@@ -79,7 +79,8 @@ export const MainContent = styled.main`
       font-size: 1.5rem;
     }
 
-    [contentEditable] {
+    .body-profile {
+      background: #fff;
       width: 100%;
       padding: 1rem;
       border: 1px solid #fff;
@@ -88,24 +89,29 @@ export const MainContent = styled.main`
     }
 
     .profile {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
       border-bottom: 1px solid;
+      padding-bottom: 1rem;
 
-      > div {
-        display: flex;
-        align-items: center;
+      color: #444;
 
-        img {
-          width: 52px;
-          height: 52px;
-          margin-right: 0.5rem;
-          border-radius: 50%;
-        }
+      img {
+        width: 52px;
+        height: 52px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
       }
     }
 
     .link-social {
+      width: 100%;
       display: flex;
       align-items: center;
+
+      padding-top: 1rem;
 
       img {
         width: 32px;

@@ -9,6 +9,12 @@ import {
 } from 'react-icons/fa'
 import Input from '../components/Input'
 
+import linkedinImg from '../assets/linkedin.png'
+import twitterImg from '../assets/twitter.png'
+import facebookImg from '../assets/facebook.png'
+import githubImg from '../assets/github.png'
+import linkImg from '../assets/link.png'
+
 import {
   Container,
   Content,
@@ -111,14 +117,14 @@ const Main = () => {
           <div className="field-of-vision">
             <span>Resultado</span>
 
-            <p contentEditable>
+            <p className="body-profile">
               <div className="profile">
-                <div>
-                  {avatar && <img src={avatar} />}
-                  {name && <h1>{name}</h1>}
-                </div>
+                {avatar && <img src={avatar} />}
 
-                {phone && <span>Phone: {phone}</span>}
+                <div>
+                  {name && <h1>{name}</h1>}
+                  {phone && <span>Phone: {phone}</span>}
+                </div>
               </div>
 
               <div className="link-social">
@@ -128,7 +134,7 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={linkedin} />
+                    <img src={linkedinImg} />
                   </a>
                 )}
 
@@ -138,7 +144,7 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={twitter} />
+                    <img src={twitterImg} />
                   </a>
                 )}
 
@@ -148,7 +154,7 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={facebook} />
+                    <img src={facebookImg} />
                   </a>
                 )}
 
@@ -158,7 +164,7 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={github} />
+                    <img src={githubImg} />
                   </a>
                 )}
 
@@ -168,9 +174,11 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={link} />
+                    <img src={linkImg} />
                   </a>
                 )}
+
+                <br />
               </div>
             </p>
           </div>
