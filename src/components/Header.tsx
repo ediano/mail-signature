@@ -5,7 +5,7 @@ import { Container, Content } from '../styles/components/Header'
 const Header = () => (
   <Container>
     <Content>
-      <h1>Assinaturas de e-mail</h1>
+      <h1>Assinatura de e-mail</h1>
 
       <a
         href="https://github.com/ediano/email-signature"

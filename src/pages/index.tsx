@@ -11,6 +11,7 @@ import {
 
 import Header from '../components/Header'
 import Input from '../components/Input'
+import Footer from '../components/Footer'
 
 import { Main, Content, Aside, MainContent } from '../styles/pages/Home'
 
@@ -34,7 +35,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Assinaturas de e-mail</title>
+        <title>Assinatura de e-mail</title>
       </Head>
 
       <Header />
@@ -313,7 +314,7 @@ const Home = () => {
         </Content>
       </Main>
 
-      <footer></footer>
+      <Footer />
     </>
   )
 }
