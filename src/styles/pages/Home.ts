@@ -144,8 +144,8 @@ export const MainContent = styled.main`
         align-items: center;
 
         img {
-          width: 52px;
-          height: 52px;
+          width: 80px;
+          height: 80px;
           margin-right: 0.5rem;
           border-radius: 50%;
         }
