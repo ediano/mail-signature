@@ -51,6 +51,8 @@ export default class MyDocument extends Document {
             href="https://reactjs.org/favicon.ico"
             type="image/x-icon"
           />
+          
+          <meta name="google-site-verification" content="Q8PkJkTk-TXDiK2vypP9zEmbP_JHLA0udjgoPCV7aHI" />
         </Head>
         <body>
           <Main />
