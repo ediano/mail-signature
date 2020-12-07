@@ -1,7 +1,9 @@
 {
-  "name": "next-template-typescript",
+  "name": "mail-signature",
   "version": "0.1.0",
   "private": true,
+  "author": "Ediano Silva Santos <silva.ediano.santos@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
