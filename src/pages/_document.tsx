@@ -74,7 +74,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
           />
-          <meta property="og:image" content="./image/screenshot.png" />
+          <meta property="og:image" content="image/screenshot.png" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta
@@ -86,7 +86,7 @@ export default class MyDocument extends Document {
             property="twitter:description"
             content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
           />
-          <meta property="twitter:image" content="./image/screenshot.png" />
+          <meta property="twitter:image" content="image/screenshot.png" />
         </Head>
         <body>
           <Main />
