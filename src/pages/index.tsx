@@ -130,7 +130,7 @@ const Home = () => {
 
           <MainContent>
             <div className="template">
-              <span>Selecione uma cor</span>
+              <span>Selecione as cores</span>
 
               <div>
                 <Input
