@@ -51,8 +51,20 @@ export default class MyDocument extends Document {
             href="https://reactjs.org/favicon.ico"
             type="image/x-icon"
           />
-          
-          <meta name="google-site-verification" content="Q8PkJkTk-TXDiK2vypP9zEmbP_JHLA0udjgoPCV7aHI" />
+
+          <meta
+            name="google-site-verification"
+            content="Q8PkJkTk-TXDiK2vypP9zEmbP_JHLA0udjgoPCV7aHI"
+          />
+
+          <meta property="og:url" content="https://mail-signature.vercel.app" />
+          <meta property="og:title" content="Assinatura de e-mail" />
+          <meta property="og:image" content="./image/screenshot.png" />
+          <meta
+            property="og:description"
+            content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
+          />
+          <meta property="og:site_name" content="Assinatura de e-mail" />
         </Head>
         <body>
           <Main />

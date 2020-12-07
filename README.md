@@ -2,7 +2,7 @@
 
 Este é um pequeno projeto, simples e open source. O objetivo aqui é facilitar a criação de assinaturas para e-mail.
 
-![screenshot](./.github/screenshot.png)
+![screenshot](./public/image/screenshot.png)
 
 ## Stacks
 
