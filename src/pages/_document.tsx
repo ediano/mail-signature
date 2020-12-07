@@ -40,6 +40,7 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <link rel="canonical" href="https://mail-signature.vercel.app/" />
 
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
@@ -57,14 +58,35 @@ export default class MyDocument extends Document {
             content="Q8PkJkTk-TXDiK2vypP9zEmbP_JHLA0udjgoPCV7aHI"
           />
 
-          <meta property="og:url" content="https://mail-signature.vercel.app" />
+          <meta name="title" content="Assinatura de e-mail" />
+          <meta
+            name="description"
+            content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
+          />
+
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content="https://mail-signature.vercel.app/"
+          />
           <meta property="og:title" content="Assinatura de e-mail" />
-          <meta property="og:image" content="./image/screenshot.png" />
           <meta
             property="og:description"
             content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
           />
-          <meta property="og:site_name" content="Assinatura de e-mail" />
+          <meta property="og:image" content="./image/screenshot.png" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:url"
+            content="https://mail-signature.vercel.app/"
+          />
+          <meta property="twitter:title" content="Assinatura de e-mail" />
+          <meta
+            property="twitter:description"
+            content="Gerador de assinaturas para e-mail, gmail, outlook, hotmail e muito outros"
+          />
+          <meta property="twitter:image" content="./image/screenshot.png" />
         </Head>
         <body>
           <Main />
