@@ -179,7 +179,6 @@ const Home = () => {
               <span>Resultado</span>
 
               <div
-                contentEditable
                 className="body-profile"
                 style={{ background: background }}
               >
@@ -204,6 +203,7 @@ const Home = () => {
 
                   {description && (
                     <div
+                      contentEditable
                       className="description"
                       style={{ color: colorDescription }}
                     >
