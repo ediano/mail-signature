@@ -178,16 +178,8 @@ const Home = () => {
             <div className="field-of-vision">
               <span>Resultado</span>
 
-              <div
-                className="body-profile"
-                style={{ background: background }}
-              >
-                <div
-                  className="profile"
-                  style={{
-                    borderBottom: `1px solid ${colorBar}`
-                  }}
-                >
+              <div className="body-profile" style={{ background: background }}>
+                <div className="profile">
                   <div>
                     {avatar && <img src={avatar} alt={name} />}
 
@@ -212,74 +204,81 @@ const Home = () => {
                   )}
                 </div>
 
-                <div className="link-social">
-                  {linkedin && (
-                    <a
-                      href={`https://www.linkedin.com/in/${linkedin}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="https://i.imgur.com/oFS6ca6.png"
-                        alt={`linkedin ${name}`}
-                      />
-                    </a>
-                  )}
+                {(linkedin || twitter || facebook || github || link) && (
+                  <div
+                    className="link-social"
+                    style={{
+                      borderTop: `1px solid ${colorBar}`
+                    }}
+                  >
+                    {linkedin && (
+                      <a
+                        href={`https://www.linkedin.com/in/${linkedin}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src="https://i.imgur.com/oFS6ca6.png"
+                          alt={`linkedin ${name}`}
+                        />
+                      </a>
+                    )}
 
-                  {twitter && (
-                    <a
-                      href={`https://twitter.com/${twitter}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="https://i.imgur.com/0ZcPdgV.png"
-                        alt={`twitter ${name}`}
-                      />
-                    </a>
-                  )}
+                    {twitter && (
+                      <a
+                        href={`https://twitter.com/${twitter}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src="https://i.imgur.com/0ZcPdgV.png"
+                          alt={`twitter ${name}`}
+                        />
+                      </a>
+                    )}
 
-                  {facebook && (
-                    <a
-                      href={`https://www.facebook.com/${facebook}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="https://i.imgur.com/TMou1Ap.png"
-                        alt={`facebook ${name}`}
-                      />
-                    </a>
-                  )}
+                    {facebook && (
+                      <a
+                        href={`https://www.facebook.com/${facebook}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src="https://i.imgur.com/TMou1Ap.png"
+                          alt={`facebook ${name}`}
+                        />
+                      </a>
+                    )}
 
-                  {github && (
-                    <a
-                      href={`https://github.com/${github}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="https://i.imgur.com/7ud4NVq.png"
-                        alt={`github ${name}`}
-                      />
-                    </a>
-                  )}
+                    {github && (
+                      <a
+                        href={`https://github.com/${github}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src="https://i.imgur.com/7ud4NVq.png"
+                          alt={`github ${name}`}
+                        />
+                      </a>
+                    )}
 
-                  {link && (
-                    <a
-                      href={`https://${link || '...'}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="https://i.imgur.com/ZYHWrxL.png"
-                        alt={`site ${name}`}
-                      />
-                    </a>
-                  )}
+                    {link && (
+                      <a
+                        href={`https://${link || '...'}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src="https://i.imgur.com/ZYHWrxL.png"
+                          alt={`site ${name}`}
+                        />
+                      </a>
+                    )}
 
-                  <br />
-                </div>
+                    <br />
+                  </div>
+                )}
               </div>
             </div>
 

@@ -137,8 +137,6 @@ export const MainContent = styled.main`
     .profile {
       width: 100%;
 
-      padding-bottom: 1rem;
-
       > div {
         display: flex;
         align-items: center;
@@ -161,6 +159,7 @@ export const MainContent = styled.main`
       display: flex;
       align-items: center;
 
+      margin-top: 1rem;
       padding-top: 1rem;
 
       img {
