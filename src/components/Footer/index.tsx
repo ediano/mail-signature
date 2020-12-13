@@ -1,7 +1,7 @@
 import { Container } from '../../styles/components/Footer'
 
 const Footer = () => (
-  <Container>
+  <Container data-testid="footer-container">
     <div>
       <div>
         By{' '}
