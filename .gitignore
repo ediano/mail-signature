@@ -34,7 +34,3 @@ package-lock.json*
 
 # vercel
 .vercel
-
-#next
-
-.next*
