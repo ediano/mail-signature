@@ -3,10 +3,10 @@ import Header from './index'
 
 describe('Test Header.tsx', () => {
   it('Return true', () => {
-    const { getByTestId } = render(<Header />)
+    const { container } = render(<Header />)
 
-    const header = getByTestId('header-container')
+    const header = container.querySelector('header')
 
-    expect(header)
+    expect(!!header).toBe(true)
   })
 })

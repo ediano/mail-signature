@@ -15,7 +15,9 @@ const Input = ({ name, label, ico: Ico, ...rest }: Props) => {
       {Ico && <Ico size="3rem" color="#fff" />}
 
       <div>
-        <label htmlFor={name}>{label}</label>
+        <label htmlFor={name} aria-label="label-input">
+          {label}
+        </label>
         <input type="text" {...rest} />
       </div>
     </Container>

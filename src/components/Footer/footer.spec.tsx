@@ -3,10 +3,10 @@ import Footer from './index'
 
 describe('Test Footer.tsx', () => {
   it('Return true', () => {
-    const { getByTestId } = render(<Footer />)
+    const { container } = render(<Footer />)
 
-    const footer = getByTestId('footer-container')
+    const footer = container.querySelector('footer')
 
-    expect(footer)
+    expect(!!footer).toBe(true)
   })
 })
