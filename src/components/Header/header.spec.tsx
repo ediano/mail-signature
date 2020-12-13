@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import Header from './index'
 
 describe('Test Header.tsx', () => {
-  it('Return true', () => {
+  it('Renderizando header', () => {
     const { container } = render(<Header />)
 
     const header = container.querySelector('header')
