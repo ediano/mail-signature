@@ -39,7 +39,9 @@ describe('Test Input.tsx', () => {
     const input = container.querySelector('input')
 
     fireEvent.change(input, { target: { value: 'Ediano' } })
-
     expect(input.value).toEqual('Ediano')
+
+    fireEvent.change(input, { target: { value: 'Ediano Silva Santos' } })
+    expect(input.value).toEqual('Ediano Silva Santos')
   })
 })
