@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import Input from './index'
 import { FaGithub } from 'react-icons/fa'
 
@@ -29,5 +29,17 @@ describe('Test Input.tsx', () => {
     expect(!!label).toBe(true)
     expect(!!input).toBe(true)
     expect(!!ico).toBe(true)
+  })
+
+  it('Inserting values into the input', () => {
+    const { container } = render(
+      <Input name="input-name" label="Input label" ico={FaGithub} />
+    )
+
+    const input = container.querySelector('input')
+
+    fireEvent.change(input, { target: { value: 'Ediano' } })
+
+    expect(input.value).toEqual('Ediano')
   })
 })
