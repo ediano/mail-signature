@@ -3,7 +3,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import { Container, Content } from '../../styles/components/Header'
 
 const Header = () => (
-  <Container>
+  <Container data-testid="header-container">
     <Content>
       <h1>Assinatura de e-mail</h1>
 
