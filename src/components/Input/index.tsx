@@ -1,7 +1,7 @@
 import { InputHTMLAttributes, ComponentType } from 'react'
 import { IconBaseProps } from 'react-icons'
 
-import { Container } from '../styles/components/Input'
+import { Container } from '../../styles/components/Input'
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   name: string

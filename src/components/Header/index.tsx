@@ -1,6 +1,6 @@
 import { AiFillGithub } from 'react-icons/ai'
 
-import { Container, Content } from '../styles/components/Header'
+import { Container, Content } from '../../styles/components/Header'
 
 const Header = () => (
   <Container>
