@@ -199,7 +199,7 @@ const Home = () => {
                       className="description"
                       style={{ color: colorDescription }}
                     >
-                      Descrição:
+                      Clique aqui para editar a descrição!
                     </div>
                   )}
                 </div>
